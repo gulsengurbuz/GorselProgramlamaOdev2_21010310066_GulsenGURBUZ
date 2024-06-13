@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GorselProgramlamaOdev21010310066.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GorselProgramlamaOdev21010310066"
+    Shell.FlyoutBehavior="Flyout"
+    Title="GorselProgramlamaOdev21010310066">
+
+   
+        <FlyoutItem Title="Home" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </FlyoutItem>
+        <FlyoutItem Title="Kurlar" Icon="kur.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Kurlar}" Route="Kurlar" />
+        </FlyoutItem>
+        <FlyoutItem Title="Haberler" Icon="news.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Haberler}" Route="Haberler" />
+        </FlyoutItem>
+        <FlyoutItem Title="Hava Durumu" Icon="hava.png">
+            <ShellContent ContentTemplate="{DataTemplate local:HavaDurumu}" Route="HavaDurumu" />
+        </FlyoutItem>
+        <FlyoutItem Title="Yapılacaklar" Icon="list.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Yapılacaklar}" Route="Yapılacaklar" />
+        </FlyoutItem>
+        <FlyoutItem Title="Ayarlar" Icon="gears.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Ayarlar}" Route="Ayarlar" />
+        </FlyoutItem>
+
+</Shell>

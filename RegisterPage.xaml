@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev21010310066.RegisterPage"
+             Title="RegisterPage">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+        <Frame CornerRadius="20">
+            <StackLayout>
+                <Label Text="Kaydol" FontSize="Large"/>
+                <Entry x:Name="txtName" Placeholder="Kullanıcı Adı" Keyboard="Default"/>
+                <Entry x:Name="txtEmail" Placeholder="Email" Keyboard="Email"/>
+                <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True"/>
+                <Button Text="Kaydol" Clicked="RegisterClicked"/>
+                <Button Text="Zaten bir hesabım var" BackgroundColor="Transparent" TextColor="Blue" FontSize="Medium" Clicked="GoToLoginPage"/>
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

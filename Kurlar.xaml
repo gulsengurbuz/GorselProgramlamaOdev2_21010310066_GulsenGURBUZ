@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev21010310066.Kurlar"
+             Title="Kurlar">
+    <ScrollView>
+
+        <StackLayout Spacing="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Tür" FontAttributes="Bold" Grid.Column="0" />
+                <Label Text="Satış" FontAttributes="Bold" Grid.Column="1" />
+                <Label Text="Alış" FontAttributes="Bold" Grid.Column="2" />
+                <Label Text="Yüksek" FontAttributes="Bold" Grid.Column="3" />
+                <Label Text="Düşük" FontAttributes="Bold" Grid.Column="4" />
+                <Label Text="Degişim" FontAttributes="Bold" Grid.Column="5" />
+                <Label Text="Oran" FontAttributes="Bold" Grid.Column="6" />
+                <Label Text="Yön" FontAttributes="Bold" Grid.Column="7" />
+            </Grid>
+
+            <ListView x:Name="listDoviz">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Doviz}" Grid.Column="0" />
+                                <Label Text="{Binding satis}" Grid.Column="1" />
+                                <Label Text="{Binding alıs }" Grid.Column="2" />
+                                <Label Text="{Binding yuksek}" Grid.Column="3" />
+                                <Label Text="{Binding dusuk}" Grid.Column="4" />
+                                <Label Text="{Binding degisim}" Grid.Column="5" />
+                                <Label Text="{Binding oran}" Grid.Column="6" />
+                                <Label Text="{Binding yon}" Grid.Column="7" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
